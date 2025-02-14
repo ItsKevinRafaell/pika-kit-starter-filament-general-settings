@@ -2,7 +2,7 @@
 
 namespace Joaopaulolndev\FilamentGeneralSettings\Forms;
 
-use Filament\Forms\Components\ColorPicker;
+// use Filament\Forms\Components\ColorPicker;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\Grid;
 use Filament\Forms\Components\Textarea;
@@ -48,11 +48,11 @@ class ApplicationFieldsForm
             TextInput::make('support_phone')
                 ->prefixIcon('heroicon-o-phone')
                 ->label(__('filament-general-settings::default.support_phone')),
-            ColorPicker::make('theme_color')
-                ->label(__('filament-general-settings::default.theme_color'))
-                ->prefixIcon('heroicon-o-swatch')
-                ->formatStateUsing(fn (?string $state): string => $state ?? config('filament.theme.colors.primary'))
-                ->helperText(__('filament-general-settings::default.theme_color_helper_text')),
+            // ColorPicker::make('theme_color')
+            //     ->label(__('filament-general-settings::default.theme_color'))
+            //     ->prefixIcon('heroicon-o-swatch')
+            //     ->formatStateUsing(fn (?string $state): string => $state ?? config('filament.theme.colors.primary'))
+            //     ->helperText(__('filament-general-settings::default.theme_color_helper_text')),
         ];
     }
 }
