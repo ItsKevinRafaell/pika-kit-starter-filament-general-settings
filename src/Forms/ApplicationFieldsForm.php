@@ -50,8 +50,7 @@ class ApplicationFieldsForm
                     ->prefixIcon('heroicon-o-phone')
                     ->label(__('filament-general-settings::default.support_phone')),
             ])
-                ->columns(4)
-                ->visible(fn () => config('filament-general-settings.show_support_contact')),
+                ->columns(4),
             // ColorPicker::make('theme_color')
             //     ->label(__('filament-general-settings::default.theme_color'))
             //     ->prefixIcon('heroicon-o-swatch')
